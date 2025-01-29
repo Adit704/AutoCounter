@@ -1,0 +1,133 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Container styles */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #6366f1, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Card styles */
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 28rem;
+}
+
+.card-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1f2937;
+}
+
+/* Counter display */
+.counter-display {
+  background-color: #f3f4f6;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.counter-value {
+  font-size: 3.75rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1f2937;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+/* Button styles */
+.button {
+  padding: 1rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.button-decrease {
+  background-color: #ef4444;
+  color: white;
+}
+
+.button-decrease:hover {
+  background-color: #dc2626;
+}
+
+.button-reset {
+  background-color: #6b7280;
+  color: white;
+}
+
+.button-reset:hover {
+  background-color: #4b5563;
+}
+
+.button-increase {
+  background-color: #22c55e;
+  color: white;
+}
+
+.button-increase:hover {
+  background-color: #16a34a;
+}
+
+/* Auto increment button */
+.auto-increment {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.auto-increment.active {
+  background-color: #9333ea;
+  color: white;
+}
+
+.auto-increment.inactive {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.auto-increment.active:hover {
+  background-color: #7e22ce;
+}
+
+.auto-increment.inactive:hover {
+  background-color: #d1d5db;
+}
