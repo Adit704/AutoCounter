@@ -1,5 +1,5 @@
 import { useReducer, useEffect, useCallback } from 'react';
-import { counterReducer, initialState } from '../store/CounterReducer';
+import { counterReducer, initialState } from '../store/counterReducer';
 
 export function useCounter() {
   const [state, dispatch] = useReducer(counterReducer, initialState);
